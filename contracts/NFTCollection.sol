@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-
+// Imports
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 
 
 contract NFTCollection is ERC721Enumerable, Ownable {
-   
-    using Strings for uint256;
+   using Strings for uint256;
+
     string public baseURI;
     string public baseExtension = ".json";
     uint256 public cost = 0.001 ether;

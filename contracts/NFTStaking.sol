@@ -18,9 +18,12 @@ contract NFTStaking is Ownable, IERC721Receiver {
     event NFTUnstaked(address owner, uint256 tokenId, uint256 value);
     event Claimed(address owner, uint256 amount);
 
+    // NFT Collection Contract
     NFTCollection nft;
+    // Stake Rewards Contract
     StakeRewards token;
 
+    // Vault for Staking
     mapping(uint256 => Stake) public vault;
 
     uint256 private constant c_dailyRewards = 10000 ether;

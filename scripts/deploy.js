@@ -34,6 +34,12 @@ async function main() {
   console.log(
     `Deployed NFTStaking  deployed to ${nftStaking.address}`
   );
+
+  // Granting permission for NFT Staking contract to control the stake rewards.
+  await stakeRewards.addController(nftStaking.address);
+  
+  console.log(
+    `Granting control for NFT Staking on  stakeRewards ${stakeRewards.address}`);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
