@@ -1,0 +1,4 @@
+// Deployed to Goerli
+Deployed Stake Rewards  deployed to 0xdD1F7f7a96d5fD28126709eb4f1122915d6C179C
+Deployed NFTCollection  deployed to 0x1Af2e277a540968Cb4476c4cA34B2083E63b73fd
+Deployed NFTStaking     deployed to 0xfD64d21372CB1ce3cb12bEd1e675675b7e1Ec6c2
